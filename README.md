@@ -65,7 +65,8 @@ video_zoom       →  只看 00:30-00:45，4 格，看清界面文字
 https://fastly.jsdelivr.net/gh/jing-hy/astrbot_plugin_video_storyboard@main/market.json
 ```
 
-（备用域名：把 fastly 换成 gcore）然后搜索「视频分镜」即可一键安装。
+（备用地址：把 fastly 换成 gcore，或用 GitHub Pages 版 `https://jing-hy.github.io/astrbot_plugin_video_storyboard/market.json`）
+然后搜索「视频分镜」即可一键安装。
 
 **② 官方插件市场**
 
