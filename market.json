@@ -1,0 +1,33 @@
+{
+  "$meta": {
+    "schema_version": 1,
+    "name": "Video Storyboard Market（自建源）",
+    "version": "2026-10-29T17:12:00.117Z",
+    "homepage": "https://github.com/jing-hy/astrbot_plugin_video_storyboard",
+    "repository": "https://github.com/jing-hy/astrbot_plugin_video_storyboard",
+    "description": "只收录 astrbot_plugin_video_storyboard 的最小市场源；在 AstrBot 插件市场页填这个 URL 即可搜到并一键安装。",
+    "updated_at": "2026-10-29T17:12:00.117Z"
+  },
+  "jing-hy/astrbot_plugin_video_storyboard": {
+    "author": "jing-hy",
+    "name": "astrbot_plugin_video_storyboard",
+    "version": "1.0.0",
+    "repo": "https://github.com/jing-hy/astrbot_plugin_video_storyboard",
+    "desc": "让模型真的看到视频画面：把视频切成镜头，每格取最清晰的一帧拼成编号宫格，并附每格起止时间清单。支持 B 站等链接、近距重看、台词定位。",
+    "display_name": "视频分镜",
+    "download_url": "https://codeload.github.com/jing-hy/astrbot_plugin_video_storyboard/zip/refs/heads/main",
+    "category": "其他",
+    "support_platforms": [
+      "aiocqhttp",
+      "qq_official",
+      "telegram",
+      "discord",
+      "slack",
+      "wecom"
+    ],
+    "astrbot_version": ">=4.20,<5",
+    "updated_at": "2026-10-29T17:12:00.117Z",
+    "stars": 0,
+    "download_count": 0
+  }
+}
