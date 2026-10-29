@@ -1,0 +1,2 @@
+# 无需额外 pip 依赖：mcp / aiohttp 随 AstrBot 一起安装。
+# 引擎侧需要 Node.js >= 20，以及 ffmpeg/ffprobe（见 README）。

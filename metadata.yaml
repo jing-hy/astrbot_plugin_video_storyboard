@@ -1,0 +1,33 @@
+name: astrbot_plugin_video_storyboard
+display_name: 视频分镜
+short_desc: 让模型真正"看"视频：一张编号宫格 + 可引用的时间轴清单
+desc: |
+  把视频切成镜头、每格取最清晰的一帧、拼成带编号的宫格图，并附一份每个格子的起止时间清单；
+  模型据此可以真的看画面（教程界面、字幕、人脸、场景），必要时再用 video_zoom 近距离重看某几秒。
+
+  四个工具：
+  - video_storyboard：全片/一段的概览宫格 + 时间轴清单
+  - video_zoom：某一段近看（格子少、每格大，能看清字幕和小字）
+  - video_probe：只读容器信息（时长/分辨率/音轨/字幕轨），不出图不花图像 token
+  - video_locate：在台词转写里找"那句话在第几秒"，纯文本
+
+  与"抽字幕再总结"类插件的区别：那些只能拿到文字，这个让模型看到画面本身。
+  引擎复用 dsh-video-storyboard（MIT）的纯 Node 管线，支持本地文件与 http(s) 链接（B 站等，需 yt-dlp）。
+version: 1.0.0
+author: jing-hy
+repo: https://github.com/jing-hy/astrbot_plugin_video_storyboard
+astrbot_version: ">=4.20,<5"
+support_platforms:
+  - aiocqhttp
+  - qq_official
+  - telegram
+  - discord
+  - slack
+  - wecom
+tags:
+  - 视频
+  - 多模态
+  - 分镜
+  - 视觉
+  - ffmpeg
+  - bilibili

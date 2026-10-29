@@ -1,0 +1,63 @@
+{
+  "node_path": {
+    "type": "string",
+    "description": "Node.js 可执行文件",
+    "default": "",
+    "hint": "留空则从 PATH 查找 node。本插件引擎需要 Node.js >= 20；Windows 常见路径 C:\\Program Files\\nodejs\\node.exe。"
+  },
+  "ffmpeg_path": {
+    "type": "string",
+    "description": "ffmpeg 路径",
+    "default": "",
+    "hint": "留空从 PATH 查找。Windows 可用 winget install Gyan.FFmpeg。"
+  },
+  "ffprobe_path": {
+    "type": "string",
+    "description": "ffprobe 路径",
+    "default": "",
+    "hint": "留空从 PATH 查找，通常和 ffmpeg 同目录。"
+  },
+  "cookies_file": {
+    "type": "string",
+    "description": "cookies.txt 路径（可选）",
+    "default": "",
+    "hint": "Netscape 格式，用于 B 站等需要登录态的链接；文件第一行必须是 # Netscape HTTP Cookie File。"
+  },
+  "asr_base_url": {
+    "type": "string",
+    "description": "ASR 服务地址（可选）",
+    "default": "",
+    "hint": "OpenAI 兼容的 /v1 地址，例如 http://127.0.0.1:8000/v1；留空则不跑 ASR，只用视频自带字幕轨。"
+  },
+  "asr_model": {
+    "type": "string",
+    "description": "ASR 模型名（可选）",
+    "default": "",
+    "hint": "例如 SenseVoiceSmall / whisper-1；留空用服务默认。"
+  },
+  "asr_key": {
+    "type": "string",
+    "description": "ASR 密钥（可选）",
+    "default": "",
+    "hint": "本地服务可随便填 local-key；云端服务填真实 key。",
+    "obvious_hint": true
+  },
+  "ocr_python": {
+    "type": "string",
+    "description": "OCR 用 Python 路径（可选）",
+    "default": "",
+    "hint": "需要装了 rapidocr_onnxruntime 的 python；用于硬字幕校正。留空则跳过 OCR。"
+  },
+  "timeout_seconds": {
+    "type": "int",
+    "description": "单次引擎超时（秒）",
+    "default": 100,
+    "hint": "必须小于 AstrBot 的工具超时（agent_runner.config.misc.tool_call_timeout，默认 120）。长视频可先只看一段。"
+  },
+  "max_download_mb": {
+    "type": "int",
+    "description": "下载视频大小上限（MB）",
+    "default": 300,
+    "hint": "消息里的视频链接下载上限，防止误抓超大文件。"
+  }
+}
