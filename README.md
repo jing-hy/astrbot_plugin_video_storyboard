@@ -55,11 +55,23 @@ video_zoom       →  只看 00:30-00:45，4 格，看清界面文字
 
 ---
 
-## 安装
+## 安装（三种方式）
 
-**插件市场**：搜索「视频分镜」或 video_storyboard。
+**① 自定义市场源（立刻可用）**
 
-**手动**：
+插件市场页 → 自定义市场源，填入：
+
+```
+https://fastly.jsdelivr.net/gh/jing-hy/astrbot_plugin_video_storyboard@main/market.json
+```
+
+（备用域名：把 fastly 换成 gcore）然后搜索「视频分镜」即可一键安装。
+
+**② 官方插件市场**
+
+搜索「视频分镜」或 video_storyboard。仓库已打上 `astrbot-plugin` 等 topic，官方市场（cloud.astrbot.app）同步收录后即可直接搜到。
+
+**③ git clone**
 
 ```bash
 cd <AstrBot 数据目录>/plugins
